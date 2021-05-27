@@ -11,13 +11,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="assets/css/style.css">
     
     <!-- JS -->
+    <script defer src="assets/js/script.js"></script>
 
 </head>
 <body>
+    
     <header class="header">
         <nav class="nav">
             <div class="container flex flex-jc-sb flex-ai-c">
@@ -47,11 +48,10 @@
     <section class="banner container" id="banner">
         <div class="banner__inner-container">
             <div class="banner__logo-container js-scroll scrolled fade-right delay-300ms">
-                <span class="banner__logo">Hello I'm Jannus Domingo,</span>
+                <span class="banner__logo">I'm JANNUS DOMINGO</span>
             </div>
-
             <div class="banner__text js-scroll scrolled fade-left delay-700ms">
-                <p>Passionate self-taught Front End Developer and school-taught Information Technology from Philippines based in Laguna.</p>
+                <p>Passionate self-taught Front End Developer and school-taught Information Technology</p>
             </div>
             
             <div class="banner__scroll-button js-scroll scrolled fade-up delay-1000ms">
@@ -64,10 +64,10 @@
     <section class="about container" id="about">
         <div class="about__inner-container">
             <div class="about__content js-scroll scrolled fade-up delay-300ms">
-                <div class="about__title">
-                    <h2>My Little Story</h2>
-                </div>
-                <div class="about__description">
+                <h2 class="section-title">
+                    My Little Story
+                </h2>
+                <div class="section-subtitle">
                     <p>I am a passionate self-taught Front End Developer and school-taught Information Technology from Philippines based in Laguna.</p>
                     <p>I love making website that looks good on every screen devices and to make it responsive, simple and clean.</p>
                     <p>I'm always trying to explore and learn new technologies and concepts especially in the Front End Stack. <span>Currently, I'm focused on moving to the next stage of my career and hoping to achieve an entry-level front end developer role.</span></p>
@@ -81,163 +81,171 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="skill container" id="skill">
-        <div class="skill__inner-container">
-            <div class="skill__title-container js-scroll fade-up delay-300ms">
-                <h2 class="section-title">Skills</h2>
-                <span class="skill__title-icon">
-                    <svg version="1.1" class="skillSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-width="50px" height="50px" fill="white" viewBox="0 0 392.186 392.186" style="enable-background: #fff;"
-xml:space="preserve">
-<g>
-<g>
-    <g>
-        <path id="frame" d="M368.62,17.951H23.568C10.57,17.951,0,28.524,0,41.52v309.146c0,12.996,10.57,23.568,23.568,23.568h345.053
-            c12.994,0,23.564-10.572,23.564-23.568V41.52C392.188,28.525,381.614,17.951,368.62,17.951z M297.56,57.528
-            c0-4.806,3.896-8.703,8.701-8.703h8.703c4.808,0,8.701,3.896,8.701,8.703v9.863c0,4.806-3.896,8.702-8.701,8.702h-8.703
-            c-4.805,0-8.701-3.896-8.701-8.702V57.528z M257.093,57.528c0-4.806,3.898-8.703,8.703-8.703h8.701
-            c4.805,0,8.703,3.896,8.703,8.703v9.863c0,4.806-3.898,8.702-8.703,8.702h-8.701c-4.805,0-8.703-3.896-8.703-8.702V57.528z
-            M363.903,345.951H28.282V102.235h335.621V345.951L363.903,345.951z M364.132,67.391c0,4.806-3.896,8.702-8.701,8.702h-8.703
-            c-4.809,0-8.702-3.896-8.702-8.702v-9.863c0-4.806,3.896-8.703,8.702-8.703h8.703c4.806,0,8.701,3.896,8.701,8.703V67.391z"/>
-        <path id="lessThan" d="M84.185,233.284l63.084,29.336c1.631,0.755,3.367,1.138,5.162,1.138c2.338,0,4.617-0.664,6.598-1.924
-            c3.547-2.267,5.666-6.13,5.666-10.334v-0.322c0-4.752-2.785-9.116-7.096-11.118l-39.455-18.332l39.455-18.334
-            c4.311-2.004,7.096-6.367,7.096-11.117v-0.319c0-4.21-2.119-8.075-5.666-10.334c-1.961-1.253-4.246-1.916-6.605-1.916
-            c-1.779,0-3.563,0.391-5.16,1.133l-63.08,29.333c-4.307,2.004-7.09,6.369-7.09,11.117v0.877
-            C77.093,226.909,79.874,231.272,84.185,233.284z"/>
-        <path id="forwardSlash" d="M165.257,293.036c2.301,3.149,6.002,5.03,9.9,5.03h0.316c5.352,0,10.041-3.426,11.672-8.517L228.7,160.788
-            c1.192-3.716,0.531-7.818-1.771-10.973c-2.301-3.15-6.002-5.03-9.901-5.03h-0.315c-5.354,0-10.048,3.425-11.679,8.516
-            l-41.559,128.771C162.292,285.793,162.958,289.889,165.257,293.036z"/>
-        <path id="greaterThan" d="M227.49,192.276c0,4.745,2.783,9.109,7.095,11.123l39.455,18.329l-39.455,18.33c-4.31,2.004-7.095,6.368-7.095,11.118
-            v0.322c0,4.205,2.117,8.068,5.668,10.336c1.974,1.258,4.254,1.924,6.595,1.924c1.793,0,3.528-0.383,5.17-1.142l63.08-29.335
-            c4.307-2.009,7.09-6.372,7.09-11.115v-0.877c0-4.748-2.783-9.113-7.094-11.117l-63.08-29.333
-            c-1.591-0.74-3.373-1.131-5.152-1.131c-2.355,0-4.643,0.661-6.604,1.912c-3.551,2.263-5.67,6.127-5.67,10.337v0.318H227.49
-            L227.49,192.276z"/>
-    </g>
-</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-                    </svg>
-                </span>
-            </div>
-
-            <div class="skill__cards-container">
-                <div class="skill__card js-scroll fade-up delay-300ms">
-                    <div class="skill__card-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="skill__card-content">
-                        <div class="skill__card-title">
-                            <h3>HTML & CSS</h3>
-                        </div>
-                        <div class="skill__card-description">
-                            The core building blocks for web development for building these cool styles and animation effects.
-                        </div>
-                    </div>
+    <section class="skill" id="skill">
+        <div class="container">
+            <div class="skill__inner-container">
+                <div class="skill__title-container js-scroll fade-up delay-300ms">
+                    <h2 class="section-title">
+                        Skills <span class="skill__title-icon">👨‍💻</span>
+                    </h2>
                 </div>
 
-                <div class="skill__card js-scroll fade-up delay-500ms">
-                    <div class="skill__card-icon">
-                        <i class="fab fa-sass"></i>
-                    </div>
-                    <div class="skill__card-content">
-                        <div class="skill__card-title">
-                            <h3>SCSS</h3>
+                <div class="skill__cards-container">
+                    <div class="skill__card js-scroll fade-up delay-300ms">
+                        <div class="skill__card-icon">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <div class="skill__card-description">
-                            A CSS preprocessor to speed up CSS coding and adds extra functionality to keep my CSS scalable and easier to work with.
+                        <div class="skill__card-content">
+                            <div class="skill__card-title">
+                                <h3>HTML & CSS</h3>
+                            </div>
+                            <div class="skill__card-description">
+                                The core building blocks for web development for building these cool styles and animation effects.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="skill__card js-scroll fade-up delay-700ms">
-                    <div class="skill__card-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <div class="skill__card-content">
-                        <div class="skill__card-title">
-                            <h3>JavaScript</h3>
+                    <div class="skill__card js-scroll fade-up delay-500ms">
+                        <div class="skill__card-icon">
+                            <i class="fab fa-sass"></i>
                         </div>
-                        <div class="skill__card-description">
-                            JS is the core language of the web that I use to build this amazing fade effects and the cross animation.
+                        <div class="skill__card-content">
+                            <div class="skill__card-title">
+                                <h3>SCSS</h3>
+                            </div>
+                            <div class="skill__card-description">
+                                A CSS preprocessor to speed up CSS coding and adds extra functionality to keep my CSS scalable and easier to work with.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="skill__card js-scroll fade-up delay-300ms">
-                    <div class="skill__card-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="skill__card-content">
-                        <div class="skill__card-title">
-                            <h3>Responsive Design</h3>
+                    <div class="skill__card js-scroll fade-up delay-700ms">
+                        <div class="skill__card-icon">
+                            <i class="fab fa-js"></i>
                         </div>
-                        <div class="skill__card-description">
-                            This site adjust itself to the device you’re using without any extra effort due to Responsive Design.
+                        <div class="skill__card-content">
+                            <div class="skill__card-title">
+                                <h3>JavaScript</h3>
+                            </div>
+                            <div class="skill__card-description">
+                                JS is the core language of the web that I use to build this amazing fade effects and the cross animation.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="skill__card js-scroll fade-up delay-500ms">
-                    <div class="skill__card-icon">
-                        <i class="fab fa-bootstrap"></i>
-                    </div>
-                    <div class="skill__card-content">
-                        <div class="skill__card-title">
-                            <h3>Bootstrap</h3>
+                    <div class="skill__card js-scroll fade-up delay-300ms">
+                        <div class="skill__card-icon">
+                            <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <div class="skill__card-description">
-                            A CSS library that focuses on simplifying the development and design websites faster and easier, but this site is pure HTML & CSS with JS.
+                        <div class="skill__card-content">
+                            <div class="skill__card-title">
+                                <h3>Responsive Design</h3>
+                            </div>
+                            <div class="skill__card-description">
+                                This site adjust itself to the device you’re using without any extra effort due to Responsive Design.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="skill__card js-scroll fade-up delay-700ms">
-                    <div class="skill__card-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="skill__card-content">
-                        <div class="skill__card-title">
-                            <h3>BEM Methodology</h3>
+                    <div class="skill__card js-scroll fade-up delay-500ms">
+                        <div class="skill__card-icon">
+                            <i class="fab fa-bootstrap"></i>
                         </div>
-                        <div class="skill__card-description">
-                            A popular naming convention for classes in HTML and CSS to help developers understand the HTML & CSS relationship better.
+                        <div class="skill__card-content">
+                            <div class="skill__card-title">
+                                <h3>Bootstrap</h3>
+                            </div>
+                            <div class="skill__card-description">
+                                A CSS library that focuses on simplifying the development and design websites faster and easier, but this site is pure HTML & CSS with JS.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill__card js-scroll fade-up delay-700ms">
+                        <div class="skill__card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="skill__card-content">
+                            <div class="skill__card-title">
+                                <h3>BEM Methodology</h3>
+                            </div>
+                            <div class="skill__card-description">
+                                A popular naming convention for classes in HTML and CSS to help developers understand the HTML & CSS relationship better.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- PORTFOLIO -->
+    
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="projects__title-container">
+                <h2 class="section-title">
+                    Projects <span class="title-icon">💻</span>
+                </h2>
+                <p class="section-subtitle">
+                    Here are some of my projects that I built for fun and also to improve my coding skills.
+                </p>
+            </div>
 
+            <div class="projects__project-container">
+                <div class="projects__project">
+                    <div class="projects__project-image">
+                        <img src="assets/img/mapolon-index.png" alt="Mapolon Index">
+                        <img src="assets/img/mapolon-dashboard.png" alt="Mapolon Dashboard">
+                    </div>
+
+                    <div class="projects__project-content-container">
+                        <h3 class="projects__project-title">
+                            <a href="http://www.mapolondentalclinic.freevar.com/Dental-Clinic/" target="_blank">Dental Clinic</a>
+                        </h3>
+                        <div class="projects__project-description">
+                            This is a thesis project I built for some of my schoolmate. She wanted a dynamic site with simple design and include a dashboard with all the functionality and the logic to manage patients and doctors appointments etc.
+                        </div>
+                        <ul class="projects__tags">
+                            <li class="tag">HTML</li>
+                            <li class="tag">CSS</li>
+                            <li class="tag">BOOTSTRAP</li>
+                            <li class="tag">JQUERY</li>
+                            <li class="tag">AJAX</li>
+                            <li class="tag">PHP</li>
+                            <li class="tag">MYSQL</li>
+                        </ul>
+                        <div class="projects__project-links">
+                            <a href="http://www.mapolondentalclinic.freevar.com/Dental-Clinic/" target="_blank">visit site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__project">
+                    <div class="projects__project-image">
+                        <img src="assets/img/mapolon-index.png" alt="Mapolon Index">
+                        <img src="assets/img/mapolon-dashboard.png" alt="Mapolon Dashboard">
+                    </div>
+
+                    <div class="projects__project-content-container">
+                        <h3 class="projects__project-title">
+                            <a href="https://jannusgithub.github.io/Personal-Portfolio-Website/" target="_blank">my first portfolio</a>
+                        </h3>
+                        <div class="projects__project-description">
+                            It is my very first version of my portfolio website. I wanted to keep this website clean, simple and responsive. The main focused of it is to use a CSS library which is Bootstrap to explore my knowledge on it.
+                        </div>
+                        <ul class="projects__tags">
+                            <li class="tag">HTML</li>
+                            <li class="tag">CSS</li>
+                            <li class="tag">BOOTSTRAP</li>
+                        </ul>
+                        <div class="projects__project-links">
+                            <a href="https://jannusgithub.github.io/Personal-Portfolio-Website/" target="_blank">visit site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- CONTACT -->
 
@@ -254,6 +262,6 @@ xml:space="preserve">
             duration: 2000,
         });
     </script> -->
-    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
