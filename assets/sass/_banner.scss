@@ -1,0 +1,71 @@
+.banner{
+    letter-spacing: 1px;
+
+    &__inner-container{
+        height: calc(100vh - 4.4rem);
+        @extend .flex;
+        flex-direction: column;
+        @extend .flex-jc-c;
+        align-items: flex-start;
+    }
+
+    &__logo{
+        font-size: 14px;
+        color: $shade-500;
+        text-shadow: none;
+    }
+
+    &__text{
+        font-size: 1.875rem; // 30px
+        font-weight: 800;
+        text-shadow: 2px 1px $neon-color;
+    }
+
+    &__scroll-button{
+        position: absolute;
+        bottom: 0;
+        padding: 1rem 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        @extend .flex;
+        font-size: 1.125rem;
+
+        &:hover span{
+            animation: bounce-down 0.5s ease-in-out 150ms both;
+        }
+        
+        span{
+            color: $shade-500;
+            margin-right: .3125rem;
+            transition: all 250ms;
+        }
+
+        a{
+            color: $white-color;
+        }
+    }
+}
+
+// Mixins to be passed on responsive.scss where it belongs of its respective breakpoints
+// Tablet Styles
+@mixin banner--md{
+    .banner{
+        &__logo{
+            font-size: 1.25rem;
+        }
+
+        &__text{
+            font-size: 2.0625rem; // 33px
+        }
+    }
+}
+
+// Desktop Styles
+@mixin banner--lg{
+    .banner{
+        &__text{
+            font-size: 2.5rem; // 40px
+        }
+    }
+}

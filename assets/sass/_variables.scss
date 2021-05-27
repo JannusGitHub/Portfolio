@@ -1,0 +1,44 @@
+/*===== CSS VARIABLES =====*/
+
+
+/*===== COLOR =====*/
+$primary-color: #5361ff;
+$dark-color: #2A3B47;
+$dark-color-light: #697477;
+
+// Neon Color
+$neon-color: #e41376;
+$secondary-color: #e41376;
+$bg-color: #101b37;
+$white-color: #fff;
+$light-color: #f0f1f3;
+$grey-color: hsl(190, 99%, 30%);
+$shade-300: #4b4bfb;
+$shade-500: hsl(190, 99%, 47%);
+
+
+/*===== TYPOGRAPHY =====*/
+$font-family-OpenSans: 'Open Sans', sans-serif;
+$font-family-Orbitron: "Orbitron", sans-serif;
+    // Font Sizes
+    $font-lg: 2rem;
+    $font-md: 1.125rem; // 18px
+    $font-sm: .875rem;   // 14px
+    @media screen and (min-width: 1024px) {
+        $font-lg: 6rem;
+        $font-md: 1rem;
+        $font-sm: .813rem;
+        $font-h1: 2.25rem;
+        $font-h2: 1.5rem;
+    }
+    // Font Weight
+    $font-normal: 400;
+    $font-semi: 600;
+    $font-bold: 700;
+
+/*===== MARGIN =====*/
+$m-5: .3125;  //5px (5 / 16)
+$m-10: .625rem;   //10px (10 / 16)
+$m-15: .9375rem;  //15px (15 / 16)
+$m-20: 1.25rem;    //20px (20 / 16)
+$m-25: 1.5625rem;    //25px (25 / 16)

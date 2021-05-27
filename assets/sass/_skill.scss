@@ -1,0 +1,48 @@
+.skill{
+    padding: 5rem 0;
+
+    &__title-icon{
+        position: absolute;
+        top: -5px;
+        padding-left: 10px;
+    }
+
+    &__cards-container{
+        margin: 2rem 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+
+    &__card{
+        border: 1px solid $shade-300;
+        flex: 1 1 300px;
+        text-align: center;
+        transition: transform 300ms;
+    }
+
+    &__card-icon{
+        box-shadow: 10px 10px 0 0 $shade-500;
+        padding: 1rem 0;
+    }
+
+    &__card-icon .fab, .fas{
+        font-size: 3.125rem; // 50px
+    }
+
+    &__card-content{
+        padding: 1rem;
+    }
+
+    &__card-title{
+        color: $shade-500;
+    }
+
+    &__card-description{
+        font-size: 1.25rem;
+    }
+
+
+}
+
