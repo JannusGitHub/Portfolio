@@ -1,0 +1,145 @@
+.header{
+    background-color: $bg-color;
+
+    nav{
+        padding: 1rem 0;
+    }
+
+    &.open{
+        
+        .header__nav-links{ // Show header__links
+            visibility: visible;
+            -webkit-animation: fade-down 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+                    animation: fade-down 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        }
+
+        .header__menu{ // Cross Animation
+            > span:first-child{
+                transform: rotate(45deg);
+            }
+    
+            > span:nth-child(2){
+                opacity: 0;
+            }
+    
+            > span:last-child{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &__logo{ // Logo
+        letter-spacing: 2px;
+        color: $shade-500;
+        font-weight: $font-normal;
+        font-size: 1.5rem;
+    }
+
+    &__menu { // Mobile Menu
+        cursor: pointer;
+
+        > span{ // Hamburger Menu Design
+            // Box Model
+            height: 2px;
+            width: 22px;
+            
+            // Visual
+            display: block;
+            background-color: $shade-500;
+            transition: all 300ms ease-in-out;
+            transform-origin: 4px 1px;
+
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    &__nav-links{ // header__nav-links
+        // Position
+        position: fixed;
+        right: 0;
+        top: 4.4rem;
+        z-index: 10;
+
+        // Box Model
+        width: 100%;
+        height: 100vh;
+        padding: 1rem;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, .2);
+
+        // Visual
+        display: flex;
+        background-color: $bg-color;
+        flex-direction: column;
+        align-items: center;
+        visibility: hidden;
+
+        .link{
+            position: relative;
+            font-size: $font-sm;
+            margin: 1rem;
+            color: $white-color;
+            text-shadow: 1px 1px $neon-color;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            // Hover effect
+            &::before{
+                content: "";
+                position: absolute;
+                z-index: -2;
+                background-color: $neon-color;
+                left: 0;
+                bottom: 0;
+                max-width: 100%;
+                height: 50%;
+                width: 0;
+                transition: width 500ms;
+            }
+            &:hover::before{
+                width: 100%;
+            }
+            
+            // Add active class
+            &.active::before{
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*===== Mixins to be passed on responsive.scss where it belongs of its respective breakpoints =====*/
+// Tablet Styles
+@mixin header--md{
+    
+}
+
+// Desktop Styles
+@mixin header--lg{
+    .header{
+        &__menu {
+            display: none;
+        }
+
+        
+        &__nav-links{ // nav-links Design for desktop view
+            position: initial;
+            width: initial;
+            height: initial;
+            box-shadow: none;
+            padding: 0;
+            flex-direction: row;
+            visibility: visible;
+
+            .link{
+                margin: initial; // Reset margin in mobile view
+                &:not(:last-child){
+                    margin-right: $m-25;
+                }
+            }
+        }
+
+
+    }
+}
