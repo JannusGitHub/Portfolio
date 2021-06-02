@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p {
 ul {
     margin: 0;
     padding: 0;
-    list-style: none;
+    
 }
 
 a {
@@ -88,6 +88,26 @@ img {
     &-ai-c{
         align-items: center;
     }
+}
+
+.btn{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: .1rem;
+    color: $shade-500;
+    border: 0.125rem solid $neon-color;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    transition: all 500ms;
+    background-color: transparent;
+
+    &:hover{
+        outline: none;
+        border-color: $shade-500;
+        background-color: $shade-500;
+        color: $bg-color;
+    }
+    
 }
 
 .grid{ // Grid layout

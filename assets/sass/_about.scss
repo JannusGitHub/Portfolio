@@ -31,12 +31,23 @@
             margin: 24px 0;
             color: $white-color;
         }
-        span{
-            font-weight: $font-bold;
-            text-decoration: underline;
-            text-decoration-color: $neon-color;
-
+        q{
+            quotes: "“" "”" "‘" "’";
+            font-weight: bold;
         }
+        q::before {
+            content: open-quote;
+            color: $shade-500;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px $neon-color;
+        }
+        q::after {
+            content: close-quote;
+            color: $shade-500;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px $neon-color;
+        }
+    
     }
 }
 

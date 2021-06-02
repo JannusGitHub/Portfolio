@@ -1,0 +1,135 @@
+.contact {
+    padding: 5rem 0;
+
+    &__contact-content{ // flex container
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__form-container{  // flex item
+        flex: 1 0 auto;
+        max-width: 37.5rem;
+        width: 100%;
+        margin-right: 3rem;
+    }
+
+    &__links-container{  // flex item
+        flex: 0 1 18.75rem;
+        font-weight: $font-light;
+
+        h3{
+            text-transform: uppercase;
+            color: $shade-500;
+            font-weight: $font-medium;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        ul li{
+            margin-left: 2rem;
+
+            &:not(:last-child){
+                margin-bottom: 1rem;
+            }
+
+            &::marker{
+                color: $neon-color;
+            }
+
+            a{
+                color: $shade-500;
+                font-size: 1rem;
+                font-weight: $font-extralight;
+
+                i{
+                    font-size: 1.5rem;
+                }
+            }
+
+            &:nth-of-type(1){
+                
+                a{
+                    margin: .5rem;
+
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__input-container{
+        position: relative;
+        margin: 1rem 0;
+
+        &.focused .contact__form-input{
+            outline: none;
+            border-color: $neon-color;
+        }
+    }
+
+    &__form-input{
+        width: 100%;
+        background: transparent;
+        caret-color: $shade-300;
+        border: 1px solid $grey-color;
+        color: $white-color;
+        transition: border 500ms;
+        padding: 1.75rem 1rem 0.5rem;
+        font-size: 1.15rem;
+
+        &:hover{
+            outline: none;
+            border-color:  $shade-300;
+        }
+        
+        &:focus{
+            outline: none;
+        }
+    }
+    
+    &__input-container label{ // Vertically center the label
+        // Position
+        position: absolute;
+        top: 12px;
+
+        // Box Model
+        width: 100%;
+        padding: 0.25rem 1rem;
+
+        // Visual
+        display: block;
+        color: $white-color;
+        font-size: 1.15rem;
+        
+        // Misc
+        transform-origin: left;
+        user-select: none;
+        transition: all 500ms;
+    }
+
+    .focused label{ // Animate the label on top when focused
+        top: 0;
+
+        // Box Model
+        // Add border to top, right & left when focused
+        border: 1px solid $neon-color;
+        border-bottom-color: transparent;
+        padding: 0;
+        
+
+        // Visual
+        font-size: 0.75rem;
+        background-color: $shade-500;
+        color: $bg-color;
+
+        // Misc
+        user-select: none;
+    }
+
+    textarea{
+        height: 18.75rem;
+        resize: none;
+        font: inherit;
+    }
+}
