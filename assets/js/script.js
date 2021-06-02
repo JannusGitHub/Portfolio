@@ -80,3 +80,35 @@ window.addEventListener('scroll', () => {
     handleScrollAnimation();
 })
 
+
+/* Form Animation */
+const inputs = document.querySelectorAll(".contact__form-input");
+inputs.forEach((input) => {
+    input.addEventListener("focus", (event) => {
+        const parent = event.target.parentElement; // target the parent of the input
+        parent.classList.add("focused");
+    });
+});
+
+inputs.forEach((input) => {
+    input.addEventListener("blur", (event) => {
+        const parent = event.target.parentElement; // target the parent of the input
+        if (!event.target.value) {
+            parent.classList.remove("focused");
+        }
+    });
+});
+
+
+/* Handle Message */
+const message = document.querySelector('#message');
+const handleMessageCount = () => {
+    var msg = document.getElementById("message").value;
+    var msgCount = document.getElementById("message-count")
+    var msgLength = msg.length;
+    const maxLength = 400;
+    var charLeft = maxLength - msgLength;
+    msgCount.innerText = charLeft;
+}
+
+message.addEventListener('input', handleMessageCount);
