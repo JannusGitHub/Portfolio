@@ -133,13 +133,11 @@
             visibility: visible;
 
             .link{
-                margin: initial; // Reset margin in mobile view
+                margin: initial; // Reset margin of mobile view
                 &:not(:last-child){
                     margin-right: $m-25;
                 }
             }
         }
-
-
     }
 }

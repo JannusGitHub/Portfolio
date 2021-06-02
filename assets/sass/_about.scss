@@ -9,7 +9,8 @@
     }
 
     &__content{
-        flex: 1 1 70%;
+        flex: 1 1 100%;
+        margin-left: 0;
     }
 
     &__image {
@@ -26,7 +27,6 @@
 
     .section-subtitle {
         
-
         > p:not(:last-child){
             margin: 24px 0;
             color: $white-color;
@@ -55,12 +55,13 @@
     .about{
 
         &__inner-container{
-            flex-wrap: nowrap;
+            flex-wrap: no-wrap;
             flex-direction: row-reverse;
             max-width: initial;
         }
 
         &__content{
+            flex-basis: 60%;
             margin-left: 2rem;
         }
 

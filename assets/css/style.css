@@ -563,7 +563,8 @@ img {
 }
 
 .about__content {
-  flex: 1 1 70%;
+  flex: 1 1 100%;
+  margin-left: 0;
 }
 
 .about__image {
@@ -876,7 +877,7 @@ footer .copyright .heart {
 }
 
 /*===== BREAKPOINTS =====*/
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
   body::before, body::after {
     width: 10px;
   }
@@ -887,11 +888,12 @@ footer .copyright .heart {
     font-size: 2.0625rem;
   }
   .about__inner-container {
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     flex-direction: row-reverse;
     max-width: initial;
   }
   .about__content {
+    flex-basis: 60%;
     margin-left: 2rem;
   }
   .about__image {
@@ -919,7 +921,7 @@ footer .copyright .heart {
   }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 62rem) {
   .header__menu {
     display: none;
   }
