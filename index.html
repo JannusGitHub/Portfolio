@@ -70,7 +70,7 @@
                 <div class="section-subtitle">
                     <p>I am a passionate self-taught Front End Developer and school-taught Information Technology from Philippines based in Laguna.</p>
                     <p>I love making website that looks good on every screen devices and to make it responsive, simple and clean.</p>
-                    <p>I'm always trying to explore and learn new technologies and concepts especially in the Front End Stack. <span>Currently, I'm focused on moving to the next stage of my career and hoping to achieve an entry-level front end developer role.</span></p>
+                    <p>I'm always trying to explore and learn new technologies and concepts especially in the Front End Stack. <q>Currently, I'm focused on moving to the next stage of my career and hoping to achieve an entry-level front end developer role.</q></p>
                 </div>
             </div>
 
@@ -222,8 +222,8 @@
 
                 <div class="projects__project">
                     <div class="projects__project-image">
-                        <img src="assets/img/mapolon-index.png" alt="Mapolon Index">
-                        <img src="assets/img/mapolon-dashboard.png" alt="Mapolon Dashboard">
+                        <img src="assets/img/jannus-banner--png.png" alt="Mapolon Index">
+                        <img src="assets/img/jannus-expi--png.png" alt="Mapolon Dashboard">
                     </div>
 
                     <div class="projects__project-content-container">
@@ -246,10 +246,74 @@
             </div>
         </div>
     </section>
+
     <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="title-container">
+                <h2 class="section-title">
+                    Contact <span class="title-icon">📧</span>
+                </h2>
+                <p class="section-subtitle">
+                    Drop me a line or give me a heads up about your available job opportunities, I look forward to hearing from you :)
+                </p>
+            </div>
+            
+            <div class="contact__contact-content">
+                <div class="contact__form-container">
+                    <form id="form" name="contact" action="https://api.staticforms.xyz/submit" method="POST">
+                        <p class="contact__success-message"></p>
+                        <input type="hidden" name="accessKey" value="031778ae-b5f6-486d-9cae-39be7f2a8122">
+                        <div class="contact__input-container">
+                            <input type="text" name="name" class="contact__form-input" id="name" required>
+                            <label for="name">Name:</label>
+                        </div>
+
+                        <div class="contact__input-container">
+                            <input type="email" name="email" class="contact__form-input" id="email" required>
+                            <label for="email">Email:</label>
+                        </div>
+
+                        <div class="contact__input-container">
+                            <input type="text" name="subject" class="contact__form-input" id="subject" required>
+                            <label for="subject">Subject:</label>
+                        </div>
+
+                        <div class="contact__input-container">
+                            <textarea class="contact__form-input" name="message" id="message" required="" maxlength="400"></textarea>
+                            <label for="message">Message:</label>
+                            <small><span id="message-count">400</span> characters</small>
+                        </div>
+
+                        <input type="text" name="honeypot" style="display: none;">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+                        <input class="btn" type="submit" value="Send"></input>
+                    </form>
+                </div>
+
+                <div class="contact__links-container">
+                    <h3>Other Links:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/JannusGitHub?tab=repositories" class="contact__contact-link"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/jannus-domingo-3a355b1b7/" class="contact__contact-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/HernandezJannus" class="contact__contact-link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="assets/img/resume.pdf" download="Jannus-Domingo-Resume" class="contact__contact-link"><i class="far fa-file"></i>&nbsp;&nbsp;download my resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-
+        <div class="container">
+            <div class="copyright">
+                © <script>document.write(new Date().getFullYear())</script> Jannus Domingo <span class="heart">♥</span>
+            </div>
+        </div>
     </footer>
 
 

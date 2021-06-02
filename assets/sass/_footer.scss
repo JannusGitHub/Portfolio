@@ -1,0 +1,14 @@
+footer{
+
+    .copyright{
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 1rem;
+        font-weight: $font-extralight;
+        color: $shade-500;
+
+        .heart{
+            text-shadow: 2px 1px $neon-color;
+        }
+    }
+}
