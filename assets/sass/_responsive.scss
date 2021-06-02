@@ -1,12 +1,12 @@
 /*===== BREAKPOINTS =====*/
 
 //minimum breakpoints to up
-//640px, 1024px, 1400px
-$breakpoints-up: ("medium": "40rem", "large": "64rem", "xlarge": "87.5rem");
+//768px, 992px, 1400px
+$breakpoints-up: ("medium": "48rem", "large": "62rem", "xlarge": "75rem");
 
 //maximum breakpoints to down
-//639px, 1023px, 1399px
-$breakpoints-down: ("small": "39.9375rem", "medium": "63.9375rem", "large": "87.4375rem");
+//767.98px, 991.98px, 1199.98px
+$breakpoints-down: ("small": "47.99875rem", "medium": "61.99875rem", "large": "1199.98rem");
 
 @mixin breakpoint-up($size){
     @media (min-width: map-get($breakpoints-up,  $size)){
@@ -33,5 +33,4 @@ $breakpoints-down: ("small": "39.9375rem", "medium": "63.9375rem", "large": "87.
 @include breakpoint-up(large){
     @include header--lg();
     @include banner--lg();
-    
 }
