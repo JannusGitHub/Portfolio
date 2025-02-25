@@ -26,7 +26,7 @@ link.forEach(n => {
 })
 
 // Use this to improve performance
-// for(let i = 0; i < link.length; i++){
+// for(let i = 0; i <Jannus link.length; i++){
 //     console.log(i);
 //     link[i].addEventListener('click', activeColor);
 // }
@@ -110,5 +110,7 @@ const handleMessageCount = () => {
     var charLeft = maxLength - msgLength;
     msgCount.innerText = charLeft;
 }
-
 message.addEventListener('input', handleMessageCount);
+
+const headerLogo = document.querySelector('.header__logo');
+headerLogo.textContent = '</Jannus>';
