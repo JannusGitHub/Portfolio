@@ -124,7 +124,14 @@ headerLogo.textContent = '</Jannus>';
 
 document.getElementById("formContact").addEventListener("submit", function(event) {
     event.preventDefault();
-    console.log('formContact called');
+
+    // Check if user already sent an email today
+    const lastSent = localStorage.getItem("lastEmailSent");
+    const today = new Date().toDateString();
+    if (lastSent === today) {
+        alert("You can only send one email per day.");
+        return;
+    }
 
     emailjs.send("service_j6h064l", "template_6jv12if", {
         from_name: document.getElementById("name").value,
@@ -133,8 +140,8 @@ document.getElementById("formContact").addEventListener("submit", function(event
         message: document.getElementById("message").value
     })
     .then(response => {
-        console.log('response ', response);
         alert("Email Sent Successfully!");
+        localStorage.setItem("lastEmailSent", today); // Store date in local storage
         document.getElementById("formContact").reset();
     }, error => {
         alert("Error: " + error);
