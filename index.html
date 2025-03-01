@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     
     <!-- JS -->
+    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script defer src="assets/js/script.js"></script>
 
 </head>
@@ -389,9 +391,9 @@
             
             <div class="contact__contact-content">
                 <div class="contact__form-container js-scroll scrolled fade-up delay-300ms">
-                    <form id="form" name="contact" action="https://api.staticforms.xyz/submit" method="POST">
+                    <form id="formContact" name="contact">
                         <p class="contact__success-message"></p>
-                        <input type="hidden" name="accessKey" value="031778ae-b5f6-486d-9cae-39be7f2a8122">
+                        
                         <div class="contact__input-container">
                             <input type="text" name="name" class="contact__form-input" id="name" required>
                             <label for="name">Name:</label>
@@ -413,13 +415,11 @@
                             <small><span id="message-count">400</span> characters</small>
                         </div>
 
-                        <input type="text" name="honeypot" style="display: none;">
-                        <input type="hidden" name="redirectTo" value="https://jannusgithub.github.io/Jannus-Personal-Portfolio/">
-                        <!-- <input class="btn" type="submit" value="Send"></input> -->
+                        <input class="btn" type="submit" value="Send"></input>
 
-                        <div title="This feature currently unavailable due to 3rd party plugins">
+                        <!-- <div title="This feature currently unavailable due to 3rd party plugins">
                             <input class="btn" type="submit" style="background-color: grey !important; color: #fff !important; border: 0.125rem solid #01c7ef !important; pointer-events: none;" value="Send"></input>
-                        </div>
+                        </div> -->
                         
                     </form>
                 </div>

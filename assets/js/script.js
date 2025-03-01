@@ -114,3 +114,29 @@ message.addEventListener('input', handleMessageCount);
 
 const headerLogo = document.querySelector('.header__logo');
 headerLogo.textContent = '</Jannus>';
+
+/**
+ * EmailJS
+ */
+(function() {
+    emailjs.init("xbzmyLQVF-mkIN5Uc"); // Replace with your EmailJS user ID
+})();
+
+document.getElementById("formContact").addEventListener("submit", function(event) {
+    event.preventDefault();
+    console.log('formContact called');
+
+    emailjs.send("service_j6h064l", "template_6jv12if", {
+        from_name: document.getElementById("name").value,
+        from_email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    })
+    .then(response => {
+        console.log('response ', response);
+        alert("Email Sent Successfully!");
+        document.getElementById("formContact").reset();
+    }, error => {
+        alert("Error: " + error);
+    });
+});
